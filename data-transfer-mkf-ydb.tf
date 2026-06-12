@@ -14,9 +14,9 @@ locals {
 
   # Target Managed Service for YDB cluster settings:
   target_db_name   = "" # Set the Managed Service for YDB database name.
-  data_stream_name = "" # Enter the name of the data stream after it's created.
 
   # Transfer settings:
+  data_stream_name = "" # Enter the name of the data stream after it's created.
   transfer_enable = 0 # Set to 1 to enable Transfer.
 }
 
