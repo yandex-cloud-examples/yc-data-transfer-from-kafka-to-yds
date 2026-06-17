@@ -17,7 +17,7 @@ locals {
 
   # Transfer settings:
   data_stream_name = "" # Enter the name of the data stream after it's created.
-  transfer_enable = 0 # Set to 1 to enable Transfer.
+  transfer_enable  = 0 # Set to 1 to enable Transfer.
 }
 
 resource "yandex_vpc_network" "network" {
@@ -33,7 +33,7 @@ resource "yandex_vpc_subnet" "subnet-a" {
   v4_cidr_blocks = ["10.1.0.0/16"]
 }
 
-# Security group for the Managed Service for Apache Kafka® and YDB clusters
+# Security group for the Managed Service for Apache Kafka® cluster
 resource "yandex_vpc_default_security_group" "security-group" {
   network_id = yandex_vpc_network.network.id
 
